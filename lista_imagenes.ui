@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>527</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel#etiqueta{
+  font-size:22px;
+  font-family:Arial;
+  font-weight: bold;
+  text-align: center;
+
+}
+QPushButton#verimg{
+  background: #c0fbca;
+  font-size: 16px;
+color:#000;
+}
+QPushButton#verimg:hover{
+  background: #9bfc9f;
+  border: 2px solid #45ba3e;
+  border-radius: 2px;
+}
+QPushButton#buscar{
+background: #e4e5e7;
+ border: 2px solid #272dbd;
+	image: url(:/imagen/lupa-de-busqueda.png);
+  font-size: 16px;
+  color:rgba(0,0,0,0);
+}
+QPushButton#buscar:hover{
+background:  rgba(88, 88, 88, 0.31);
+image: url(:/imagen/lupa-de-busqueda.png);
+  border: 2px solid #272dbd;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#00083e;
+}
+
+QLineEdit{
+  width: 180px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  font-family: serif;
+  font-size: 12px;
+}
+QLineEdit:hover{
+  border-radius: 4px;
+  border:2px solid #9cd3f2;
+}
+QPushButton#eliminar{
+ background: #e4e5e7;
+  border: 2px solid #c84e3d;
+	image: url(:/imagen/basura.png);
+ font-size: 16px;
+ color:rgba(0,0,0,0);
+}
+QPushButton#eliminar:hover{
+background:  rgba(88, 88, 88, 0.31);
+ image: url(:/imagen/basura.png);
+  border: 2px solid #c84e3d;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#00083e;
+}
+QPushButton#cerrar{
+background: #e4e5e7;
+ border: 2px solid #f9472e;
+	image: url(:/imagen/salida.png);
+  font-size: 16px;
+  color:rgba(0,0,0,0);
+}
+QPushButton#cerrar:hover{
+  background:  rgba(88, 88, 88, 0.31);
+image: url(:/imagen/salida.png);
+  border: 2px solid #f9472e;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#00083e;
+}
+QPushButton#editar{
+ background: #e4e5e7;
+  border: 2px solid #21a1c3;
+	image: url(:/imagen/documento.png);
+ font-size: 16px;
+ color:rgba(0,0,0,0);
+}
+QPushButton#editar:hover{
+background:  rgba(88, 88, 88, 0.31);
+image: url(:/imagen/documento.png);
+  border: 2px solid #21a1c3;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#00083e;
+}
+QPushButton#aisg_usuario{
+  background: #a9a9ff;
+  font-size: 16px;
+color:#fff;
+}
+QPushButton#aisg_usuario:hover{
+  background: #4d46b5;
+  border: 2px solid #302bba;
+  border-radius: 2px;
+}</string>
+  </property>
+  <widget class="QLabel" name="etiqueta">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>10</y>
+     <width>191</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lista de Imagenes</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>921</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Imagenes</string>
+   </property>
+   <widget class="QLabel" name="lblimgen2">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>230</y>
+      <width>201</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QLabel#lblimgen2{
+border:1px solid #000;
+
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buscar">
+    <property name="geometry">
+     <rect>
+      <x>792</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>70</y>
+      <width>641</width>
+      <height>311</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblimgen1">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>80</y>
+      <width>201</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_buscar">
+    <property name="geometry">
+     <rect>
+      <x>552</x>
+      <y>30</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="verimg">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>374</y>
+      <width>181</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ver Imagenes</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="verticalSlider">
+    <property name="geometry">
+     <rect>
+      <x>218</x>
+      <y>230</y>
+      <width>20</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_bar_color">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>230</y>
+      <width>31</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#label_bar_color{
+background-color: rgb(21, 0, 255);
+border-image: url(:/imagen/IMG_0020.JPG);
+z-index:-20;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>40</y>
+     <width>930</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Opciones</string>
+   </property>
+   <widget class="QPushButton" name="eliminar">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>13</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cerrar">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>13</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cerrar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="editar">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>12</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

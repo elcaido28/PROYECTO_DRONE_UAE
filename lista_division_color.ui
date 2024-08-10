@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>589</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel#etiqueta{
+  font-size:22px;
+  font-family:Arial;
+  font-weight: bold;
+  text-align: center;
+  
+}
+QPushButton#restablecer{
+  background: #c0fbca;
+  font-size: 16px;
+color:#fff;
+}
+QPushButton#restablecer:hover{
+  background: #9bfc9f;
+  border: 2px solid #45ba3e;
+  border-radius: 2px;
+}
+QPushButton#eliminar{
+  background: #dbb2b2;
+  font-size: 16px;
+color:#fff;
+}
+QPushButton#eliminar:hover{
+  background: #dd4141;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+QPushButton#cerrar{  
+background: #e4e5e7;
+ border: 2px solid #f9472e;
+	image: url(:/imagen/salida.png);
+  font-size: 16px;
+  color:rgba(0,0,0,0);
+}
+QPushButton#cerrar:hover{
+  background:  rgba(88, 88, 88, 0.31);
+	image: url(:/imagen/salida.png);
+  border: 2px solid #f9472e;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#00083e;
+}
+QPushButton#actualiza{   
+ background: #e4e5e7;
+  border: 2px solid #21a1c3;
+	image: url(:/imagen/documento.png);
+ font-size: 16px;
+ color:rgba(0,0,0,0);
+}
+QPushButton#actualiza:hover{
+background:  rgba(88, 88, 88, 0.31);
+image: url(:/imagen/documento.png);
+  border: 2px solid #21a1c3;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#00083e;
+}
+QPushButton#buscar{
+background: #e4e5e7;
+ border: 2px solid #272dbd; 
+	image: url(:/imagen/lupa-de-busqueda.png);
+  font-size: 16px;
+  color:rgba(0,0,0,0);
+}
+QPushButton#buscar:hover{
+background:  rgba(88, 88, 88, 0.31);
+image: url(:/imagen/lupa-de-busqueda.png);
+  border: 2px solid #272dbd;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#00083e;
+}
+
+QLineEdit{
+  width: 180px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  font-family: serif;
+  font-size: 12px;
+}
+QLineEdit:hover{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+QPushButton#aisg_usuario{
+  background: #a9a9ff;
+  font-size: 16px;
+color:#fff;
+}
+QPushButton#aisg_usuario:hover{
+  background: #4d46b5;
+  border: 2px solid #302bba;
+  border-radius: 2px;
+}
+</string>
+  </property>
+  <widget class="QTableWidget" name="table">
+   <property name="geometry">
+    <rect>
+     <x>18</x>
+     <y>183</y>
+     <width>551</width>
+     <height>192</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_buscar">
+   <property name="geometry">
+    <rect>
+     <x>242</x>
+     <y>143</y>
+     <width>211</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Busqueda por FECHA y TITULO</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>56</y>
+     <width>571</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Opciones</string>
+   </property>
+   <widget class="QPushButton" name="cerrar">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>12</y>
+      <width>100</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cerrar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="actualiza">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>12</y>
+      <width>90</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="etiqueta">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>6</y>
+     <width>331</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Lista de Division de Colores</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buscar">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>143</y>
+     <width>61</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Buscar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

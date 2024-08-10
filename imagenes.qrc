@@ -1,0 +1,42 @@
+<RCC>
+  <qresource>
+    <file>imagen/gestion.png</file>
+    <file>imagen/cortar.png</file>
+    <file>imagen/division.png</file>
+    <file>imagen/division2.png</file>
+    <file>imagen/histograma.png</file>
+    <file>imagen/porcentajes.png</file>
+    <file>imagen/reducir.png</file>
+    <file>imagen/ojo.png</file>
+    <file>imagen/IMG_0020.JPG</file>
+    <file>imagen/icon.png</file>
+    <file>imagen/marca-de-verificacion.png</file>
+    <file>imagen/tic-de-correcion.png</file>
+    <file>imagen/conec32x32.png</file>
+    <file>imagen/fondo_pantalla.jpg</file>
+    <file>imagen/fondo_pantalla.png</file>
+    <file>imagen/add-file.png</file>
+    <file>imagen/anadir.png</file>
+    <file>imagen/anadir-pagina.png</file>
+    <file>imagen/anadir-pagina-nueva.png</file>
+    <file>imagen/basura.png</file>
+    <file>imagen/carpeta.png</file>
+    <file>imagen/descargar.png</file>
+    <file>imagen/documento.png</file>
+    <file>imagen/entrar-flecha-derecha-que-entra-en-un-rectangulo-esbozado.png</file>
+    <file>imagen/guardar.png</file>
+    <file>imagen/images.jpg</file>
+    <file>imagen/lupa-de-busqueda.png</file>
+    <file>imagen/recargar.png</file>
+    <file>imagen/salida.png</file>
+    <file>imagen/sumar.png</file>
+    <file>imagen/suministro.png</file>
+    <file>imagen/cubo-de-basura.png</file>
+    <file>imagen/pyremoto64x64.png</file>
+    <file>imagen/salir32x32.png</file>
+    <file>imagen/star16x16.png</file>
+    <file>imagen/conec16x16.png</file>
+    <file>imagen/actualizar.png</file>
+    <file alias="fondo_pantalla.jpg">fondo_pantalla.jpg</file>
+  </qresource>
+</RCC>

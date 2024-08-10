@@ -1,0 +1,104 @@
+QDialog{
+background-image:url(imagenes/fondo_pantalla.jpg);
+background: rgb(234, 234, 234);
+font-family: serif;
+}
+QLabel#etiqueta{
+	font-size: 18px;
+  font-family:Calibri;
+  font-weight: bold;
+  text-align: center;
+}
+QLineEdit{
+  width: 180px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  font-family: serif;
+  font-size: 12px;
+}
+QLineEdit:hover{
+  border-radius: 4px;
+  border:2px solid #9cd3f2;
+}
+QLineEdit:focus{
+  border-radius: 4px;
+  border:2px solid #9cd3f2;
+}
+
+QLabel{
+  width: 70px;
+  height: 35px;
+  border: 0;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 12px;
+}
+QPushButton#registrar{
+  background: #c0fbca;
+  font-size: 16px;
+}
+QPushButton#registrar:hover{
+  background: #9bfc9f;
+  border: 2px solid #45ba3e;
+  border-radius: 2px;
+}
+
+QPushButton#cancelar{
+  background: #dbb2b2;
+  font-size: 16px;
+}
+QPushButton#cancelar:hover{
+  background: #dd4141;
+  border: 2px solid #cb2a2a;
+  border-radius: 2px;
+}
+
+
+QLabel#labelImagen,#labelImagen_2{
+border: 1px solid #000;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0px 4px;
+
+}
+
+QPushButton#buscar{
+  background: #8bc5e0;
+  font-size: 16px;
+}
+QPushButton#buscar:hover{
+  background: #4f9cc7;
+  border: 2px solid #3e43ba;
+  border-radius: 2px;
+}
+
+
+QPushButton#cortar{
+  background: #84bd96;
+  font-size: 16px;
+}
+QPushButton#cortar:hover{
+  background: #41a661;
+  border: 2px solid #c6c451;
+  border-radius: 2px;
+}
+QPushButton#eliminar{
+   border: 2px solid #21a1c3;
+ image: url(:/imagen/imagen/basura.png);
+  font-size: 16px;
+color:rgba(0,0,0,0);
+}
+QPushButton#eliminar:hover{
+	background: #e4e5e7;
+ image: url(:/imagen/imagen/basura.png);
+  border: 2px solid #c84e3d;
+  border-radius: 2px;
+  color:#00083e;
+	font-weight: bold;
+}
+.color{
+	background: rgba(0, 41, 0)
+}

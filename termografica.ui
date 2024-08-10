@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1012</width>
+    <height>523</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel#etiqueta{
+  font-size:20px;
+  font-family:Arial;
+  font-weight: bold;
+  text-align: center;
+}
+QLineEdit{
+  width: 180px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  font-family: serif;
+  font-size: 12px;
+}
+QLineEdit:hover{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+QLineEdit:focus{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+
+QSpinBox{
+  width: 180px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  font-family: serif;
+  font-size: 12px;
+}
+QSpinBox:hover{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+QSpinBox:focus{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+
+
+
+QLabel{
+  width: 70px;
+  height: 35px;
+  border: 0;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 12px;
+}
+
+QPushButton#buscar{
+background: #e4e5e7;
+ border: 2px solid #272dbd; 
+	image: url(:/imagen/lupa-de-busqueda.png);
+  font-size: 16px;
+  color:rgba(0,0,0,0);
+}
+QPushButton#buscar:hover{
+background:  rgba(88, 88, 88, 0.31);
+image: url(:/imagen/lupa-de-busqueda.png);
+  border: 2px solid #272dbd;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#00083e;
+}
+
+QPushButton#mostrar_imagen{
+image: url(:/imagen/ojo.png);
+  background: #8bc5e0;
+  font-size: 16px;
+ color:rbga(0,0,0,0);
+}
+QPushButton#mostrar_imagen:hover{
+  background: rgb(29, 65, 85);
+  border: 2px solid #3e43ba;
+  border-radius: 2px;
+ image: url(:/imagen/ojo.png);
+font-family: serif;
+font-weight: bold;
+color:#ffffff;
+}
+
+QPushButton#histograma{  
+image: url(:/imagen/histograma.png);
+  background: #5db97b;
+  font-size: 16px;
+color: rbga(0,0,0,0);
+}
+QPushButton#histograma:hover{
+image: url(:/imagen/histograma.png);
+  background: #246e3b;
+  border: 2px solid #b3b036;
+  border-radius: 2px;
+font-family: serif;
+font-weight: bold;
+  color:#ffffff;
+}
+
+
+QPushButton#porcentajes_color{  
+image: url(:/imagen/porcentajes.png);
+  background:#a2ba6f;
+  font-size: 16px;
+color: rbga(0,0,0,0);
+}
+QPushButton#porcentajes_color:hover{  division_color
+image: url(:/imagen/porcentajes.png);
+  background: #586c2d;
+  border: 2px solid #7cad11;
+  border-radius: 2px;
+font-family: serif;
+font-weight: bold;
+  color:#ffffff;
+}
+
+
+QPushButton#division_color{  
+image: url(:/imagen/division2.png);
+  background:#bf986a;
+  font-size: 16px;
+color: rbga(0,0,0,0);
+}
+QPushButton#division_color:hover{  
+image: url(:/imagen/division2.png);
+  background: #605446;
+  border: 2px solid #744713;
+  border-radius: 2px;
+font-family: serif;
+font-weight: bold;
+  color:#ffffff;
+}
+
+QPushButton#guarda_corte{
+  background: #c0fbca;
+  font-size: 16px;
+}
+QPushButton#guarda_corte:hover{
+  background: #9bfc9f;
+  border: 2px solid #45ba3e;
+  border-radius: 2px;
+}</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>220</y>
+     <width>471</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Lista de Imagenes</string>
+   </property>
+   <widget class="QTableWidget" name="table">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>401</width>
+      <height>201</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_buscar">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>30</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buscar">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="etiqueta">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>10</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Analisis Termografico</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblimgen">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>140</y>
+     <width>461</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>90</y>
+     <width>471</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Datos de Imagen</string>
+   </property>
+   <widget class="QRadioButton" name="img_normal">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG Normal</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="img_termica">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>20</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>IMG Termica</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="mostrar_imagen">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>16</y>
+      <width>75</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ver  IMG</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Tipos de Analisis</string>
+    </property>
+    <widget class="QPushButton" name="histograma">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Histogramas</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="porcentajes_color">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>20</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Porcentajes</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="division_color">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>20</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>División</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

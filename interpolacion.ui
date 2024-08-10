@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1021</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>461</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Lista de Imagenes</string>
+   </property>
+   <widget class="QTableWidget" name="table">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>81</y>
+      <width>401</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_buscar">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>231</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buscar">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>40</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Buscar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>471</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Datos de Imagen</string>
+   </property>
+   <widget class="QPushButton" name="mostrar_imagen">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>23</y>
+      <width>101</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ver  IMG</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="interpolar">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>23</y>
+      <width>101</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Interpolar IMG</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="guardar_interpolacion">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>23</y>
+      <width>131</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Guardar Interpalación</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="imag_1">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>100</y>
+     <width>181</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="imag_2">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>100</y>
+     <width>181</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="imag_interpo">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>270</y>
+     <width>471</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>30</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Interpolación de Imagenes</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

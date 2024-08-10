@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>210</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QLineEdit{
+  width: 180px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  font-family: serif;
+  font-size: 12px;
+}
+QLineEdit:hover{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+QLineEdit:focus{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+
+QSpinBox{
+  width: 180px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  font-family: serif;
+  font-size: 12px;
+}
+QSpinBox:hover{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+QSpinBox:focus{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+
+QLabel{
+  width: 70px;
+  height: 35px;
+  border: 0;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 12px;
+}
+
+QPushButton#registrar{
+  background: #c0fbca;
+  font-size: 16px;  
+	image: url(:/imagen/marca-de-verificacion.png);
+  color:rgba(0,0,0,0);
+}
+QPushButton#registrar:hover{
+background: #4d7053;
+image: url(:/imagen/guardar.png);
+  border: 2px solid #45ba3e;
+  border-radius: 2px;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#ffffff;
+}
+
+QPushButton#cancelar{
+  background: #dbb2b2;
+	image: url(:/imagen/icon.png);
+ font-size: 16px;
+ color:rgba(0,0,0,0);
+}
+QPushButton#cancelar:hover{
+  background:#7c4a4a;
+  border: 2px solid #cb2a2a;
+image: url(:/imagen/icon.png);
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#ffffff;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>80</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Privilegio</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="privilegio">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>80</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="registrar">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>150</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Registrar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelar">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>150</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Cancelar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="etiqueta4">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#etiqueta4{
+  font-size:20px;
+  font-family:Arial;
+  font-weight: bold;
+  text-align: center;
+}</string>
+   </property>
+   <property name="text">
+    <string>Ingreso de Privilegios</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

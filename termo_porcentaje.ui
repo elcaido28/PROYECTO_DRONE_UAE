@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+QLineEdit{
+  width: 180px;
+  height: 35px;
+  border: 0;
+  border-radius: 4px;
+  font-family: serif;
+  font-size: 12px;
+}
+QLineEdit:hover{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+QLineEdit:focus{
+  border-radius: 4px;
+  border:2px solid #9cd3f2; 
+}
+
+
+QLabel{
+  width: 70px;
+  height: 35px;
+  border: 0;
+  font-weight: bold;
+  font-family: serif;
+  font-size: 12px;
+}
+
+QPushButton#guardar_pro_color{
+  background: #c0fbca;
+  font-size: 16px;  
+	image: url(:/imagen/marca-de-verificacion.png);
+  color:rgba(0,0,0,0);
+}
+QPushButton#guardar_pro_color:hover{
+background: #4d7053;
+image: url(:/imagen/guardar.png);
+  border: 2px solid #45ba3e;
+  border-radius: 2px;
+  border-radius: 2px;
+  font-family: serif;
+font-weight: bold;
+  color:#ffffff;
+}
+
+
+QPushButton#registro_anali{  
+image: url(:/imagen/add-file.png);
+  background: #5db97b;
+  font-size: 16px;
+color: rbga(0,0,0,0);
+}
+QPushButton#registro_anali:hover{
+image: url(:/imagen/add-file.png);
+  background: #246e3b;
+  border: 2px solid #b3b036;
+  border-radius: 2px;
+font-family: serif;
+font-weight: bold;
+  color:#ffffff;
+}
+</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>80</y>
+     <width>301</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Metricas Analiticas Sobre la Imagen</string>
+   </property>
+   <widget class="QLabel" name="lbl_escala">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>100</y>
+      <width>361</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>281</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Escala de porcentajes de colores</string>
+    </property>
+    <widget class="QLineEdit" name="txt_rojo">
+     <property name="geometry">
+      <rect>
+       <x>33</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>49</x>
+       <y>20</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rojo</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>20</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Amarillo</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_amarillo">
+     <property name="geometry">
+      <rect>
+       <x>103</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_blanco">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>90</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>20</y>
+       <width>50</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Naranja</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="guardar_pro_color">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>130</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Guardar</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>178</x>
+       <y>70</y>
+       <width>40</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Blanco</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_morado">
+     <property name="geometry">
+      <rect>
+       <x>104</x>
+       <y>90</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_naranja">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>40</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>108</x>
+       <y>70</y>
+       <width>50</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Morado</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>47</x>
+       <y>70</y>
+       <width>31</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Azul</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txt_azul">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>90</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPlainTextEdit" name="mues_anali">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>200</y>
+      <width>261</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>El analisis realizado representa los valores de rojo, amarillo, blanco, lo que concluye como una temperatura superior al rango apropiado parael CACAO.
+Las metricas tienen una desviacion de mas menos 0.68%  como maximo.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="registro_anali">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>332</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Registrar Analisis</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="etiqueta">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>10</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Analisis Termografico - Porcentaje de colores</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblimgen">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>100</y>
+     <width>531</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

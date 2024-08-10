@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>893</width>
+    <height>556</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-image: url(:/imagen/fondo_pantalla.jpg);
+ background-size:cover; 
+ background-attachment: fixed;
+ background-repeat: no-repeat;
+ background-position:auto;
+
+}</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>893</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMantenimiento">
+    <property name="title">
+     <string>Mantenimiento</string>
+    </property>
+    <widget class="QMenu" name="menuAdministraci_n">
+     <property name="title">
+      <string>Administración</string>
+     </property>
+     <widget class="QMenu" name="menuEmpleados_2">
+      <property name="title">
+       <string>Empleados</string>
+      </property>
+      <addaction name="actionLista_3"/>
+      <addaction name="actionNuevo_3"/>
+     </widget>
+     <widget class="QMenu" name="menuPrivilegios_2">
+      <property name="title">
+       <string>Privilegios</string>
+      </property>
+      <addaction name="actionLista_4"/>
+      <addaction name="actionNuevo_4"/>
+     </widget>
+     <addaction name="menuEmpleados_2"/>
+     <addaction name="actionUsuarios"/>
+     <addaction name="menuPrivilegios_2"/>
+    </widget>
+    <addaction name="actionInformacion"/>
+    <addaction name="menuAdministraci_n"/>
+   </widget>
+   <widget class="QMenu" name="menuGPS">
+    <property name="title">
+     <string>GPS</string>
+    </property>
+    <addaction name="actionListado_ubicaciones"/>
+   </widget>
+   <widget class="QMenu" name="menuTermografia">
+    <property name="title">
+     <string>Termografia</string>
+    </property>
+    <addaction name="actionMetricas_Termograficas"/>
+    <addaction name="actionLista_Porcentajes_Termografia"/>
+    <addaction name="actionLista_Divisi_n_Termografia"/>
+   </widget>
+   <widget class="QMenu" name="menuProcesamiento_IMG">
+    <property name="title">
+     <string>Procesamiento IMG</string>
+    </property>
+    <widget class="QMenu" name="menuEdici_n">
+     <property name="title">
+      <string>Edición</string>
+     </property>
+     <addaction name="actionTama_os"/>
+     <addaction name="actionCortar"/>
+    </widget>
+    <widget class="QMenu" name="menuImagenes">
+     <property name="title">
+      <string>Imagenes</string>
+     </property>
+     <addaction name="actionLista_de_Imagenes"/>
+     <addaction name="actionCargar_Imagenes"/>
+    </widget>
+    <addaction name="menuImagenes"/>
+    <addaction name="menuEdici_n"/>
+   </widget>
+   <widget class="QMenu" name="menuInterpolaci_n">
+    <property name="title">
+     <string>Interpolación</string>
+    </property>
+    <addaction name="actionInterpolado"/>
+    <addaction name="actionLista_de_Interpolaciones"/>
+    <addaction name="actionInterpolado_de_Hectarea"/>
+    <addaction name="actionLista_de_Interp_Hectarea"/>
+    <addaction name="actionUnion_de_IMG"/>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title">
+     <string>Reportes</string>
+    </property>
+    <widget class="QMenu" name="menuImagenes_2">
+     <property name="title">
+      <string>Imagenes</string>
+     </property>
+     <addaction name="actionTodas_las_Imagenes"/>
+     <addaction name="actionAnalisis_Completo_de_IMG"/>
+     <addaction name="actionAnalisis_de_Hectarea_cultivo"/>
+    </widget>
+    <addaction name="actionReporte1"/>
+    <addaction name="menuImagenes_2"/>
+   </widget>
+   <addaction name="menuMantenimiento"/>
+   <addaction name="menuGPS"/>
+   <addaction name="menuTermografia"/>
+   <addaction name="menuProcesamiento_IMG"/>
+   <addaction name="menuInterpolaci_n"/>
+   <addaction name="menuReportes"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionInformacion">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Información</string>
+   </property>
+  </action>
+  <action name="actionListado_ubicaciones">
+   <property name="text">
+    <string>Listado de Ubicaciónes</string>
+   </property>
+  </action>
+  <action name="actionMetricas_Termograficas">
+   <property name="text">
+    <string>Metricas Termograficas</string>
+   </property>
+  </action>
+  <action name="actionTama_os">
+   <property name="text">
+    <string>Tamaños</string>
+   </property>
+  </action>
+  <action name="actionCortar">
+   <property name="text">
+    <string>Cortar</string>
+   </property>
+  </action>
+  <action name="actionAsignacion_de_Imagenes">
+   <property name="text">
+    <string>Asignacion de Imagenes</string>
+   </property>
+  </action>
+  <action name="actionInterpolado">
+   <property name="text">
+    <string>Interpolado de IMG</string>
+   </property>
+  </action>
+  <action name="actionLista">
+   <property name="text">
+    <string>Lista</string>
+   </property>
+  </action>
+  <action name="actionNuevo">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionusuarios">
+   <property name="text">
+    <string>usuarios</string>
+   </property>
+  </action>
+  <action name="actionLista_2">
+   <property name="text">
+    <string>Lista</string>
+   </property>
+  </action>
+  <action name="actionNuevo_2">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionReporte1">
+   <property name="text">
+    <string>Empleados</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Imagenes">
+   <property name="text">
+    <string>Lista de Imagenes</string>
+   </property>
+  </action>
+  <action name="actionCargar_Imagenes">
+   <property name="text">
+    <string>Cargar Imagenes</string>
+   </property>
+  </action>
+  <action name="actionUsuarios">
+   <property name="text">
+    <string>Usuarios</string>
+   </property>
+  </action>
+  <action name="actionLista_3">
+   <property name="text">
+    <string>Lista</string>
+   </property>
+  </action>
+  <action name="actionNuevo_3">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionLista_4">
+   <property name="text">
+    <string>Lista</string>
+   </property>
+  </action>
+  <action name="actionNuevo_4">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionLista_Porcentajes_Termografia">
+   <property name="text">
+    <string>Lista Porcentajes - Termografia</string>
+   </property>
+  </action>
+  <action name="actionLista_Divisi_n_Termografia">
+   <property name="text">
+    <string>Lista División - Termografia</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Interpolaciones">
+   <property name="text">
+    <string>Lista de Interpolaciones</string>
+   </property>
+  </action>
+  <action name="actionInterpolado_de_Hectarea">
+   <property name="text">
+    <string>Interpolado de Hectarea</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Interp_Hectarea">
+   <property name="text">
+    <string>Lista de Interp. Hectarea</string>
+   </property>
+  </action>
+  <action name="actionUnion_de_IMG">
+   <property name="text">
+    <string>Union de IMG</string>
+   </property>
+  </action>
+  <action name="actionTodas_las_Imagenes">
+   <property name="text">
+    <string>Todas las Imagenes</string>
+   </property>
+  </action>
+  <action name="actionAnalisis_Completo_de_IMG">
+   <property name="text">
+    <string>Analisis Completo de IMG</string>
+   </property>
+  </action>
+  <action name="actionAnalisis_de_Hectarea_cultivo">
+   <property name="text">
+    <string>Analisis de Hectarea (cultivo)</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

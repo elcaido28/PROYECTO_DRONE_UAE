@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/imagen">
+    <file>actualizar.jpg</file>
+  </qresource>
+</RCC>
